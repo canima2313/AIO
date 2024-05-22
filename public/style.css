@@ -1,0 +1,119 @@
+@keyframes SlideUp{
+    0%{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+@font-face {
+    font-family: font1;
+    src: url(sansation_light.woff);
+  }
+.bg{
+    background-color: #222831;
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #71e6ec;
+}
+.homelink{
+    margin: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #31363F;
+}
+.p1{
+    display: inline-block;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+    border: 0cap;
+    color: #31363F;
+}
+.p1:hover{
+    transform: translateY(-10px);
+    background-color: #38aeb4;
+}
+.body{
+    background-color: #31363F;
+    padding: 40px;
+}
+.p2{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    margin: 15px;
+    animation: SlideUp 1s;
+}
+.p3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-right: 100px;
+    color: aliceblue;
+    animation: SlideUp 1s;
+}
+.wrapper{
+    margin: 40px;
+}
+.extra{
+    display: flex;
+}
+.download{
+    display: grid;
+    justify-content: center;
+    margin: 150px;
+    grid-template-rows: 150px 100px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    padding: 20px;
+    background-color: #31363F;
+    border-radius: 40px;
+}
+.normal{
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    margin: 50px;
+    grid-column:span 5 ;}
+.int1{
+    grid-column: span 5;
+    border-radius: 20px;
+    margin: 10px;
+}
+.downloader{
+    display: flex;
+    justify-content: center;
+    grid-column: 3/3;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #71e6ec;
+    font-weight: bold;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+.downloader:hover{
+    transform: translateY(-10px);
+}
+
+.uploader{
+    grid-column: 3/3;
+    padding: 50px;
+}
+
+input[type="file"]{
+    background-color: #71e6ec;
+    border-radius: 20px;
+    padding: 30px;
+}
